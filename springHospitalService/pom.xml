@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>spring.authoziration</groupId>
+		<artifactId>springHospital</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>fpt.frontend</groupId>
+	<artifactId>springHospitalService</artifactId>
+	<version>1.0</version>
+	<!-- <packaging>war</packaging> -->
+	<name>springHospitalService Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<!-- <dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency> -->
+		<!-- add dependency for project refrences -->
+		<dependency>
+			<groupId>fpt.model</groupId>
+			<artifactId>springHospitalFEModel</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>fpt.database</groupId>
+			<artifactId>springHospitalStorage</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>fpt.model</groupId>
+			<artifactId>springHospitalModel</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>fpt.common</groupId>
+			<artifactId>springHospitalCommon</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>fpt.database</groupId>
+			<artifactId>springHospitalStorage</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-core</artifactId>
+			<version>${spring.integration.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-http</artifactId>
+			<version>${spring.integration.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-stream</artifactId>
+			<version>${spring.integration.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>springHospitalService</finalName>
+	</build>
+</project>
